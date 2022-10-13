@@ -1,0 +1,11 @@
+.NavbarTop{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+img{
+    width: 96px;
+    height: 96px;
+}
