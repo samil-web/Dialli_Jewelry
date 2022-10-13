@@ -1,0 +1,65 @@
+.images >img{
+    /* border-radius: 50%; */
+    border-radius: 25px;
+    width: 293px;
+    height: 293px;
+}
+.images {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 4;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.images >.ring{
+    margin-left: 33%;
+    grid-area: 1/1/2/2;
+}
+
+
+.images >.bracelet{
+    grid-area: 2/3/3/4;
+}
+
+.images >.earring{
+    margin-left: 33%;
+    grid-area: 3/1/4/2;
+}
+
+.images >.necklace{
+    grid-area: 4/3/5/4;
+}
+
+
+.Rings{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/2/2/3;
+}
+
+.Bracelets{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2/2/3/3;
+}
+
+.Earrings{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3/2/4/3;
+}
+
+.Necklace{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 4/2/5/3;
+}
