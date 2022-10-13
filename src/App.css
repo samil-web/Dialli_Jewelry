@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body{
+    background-color: whitesmoke
+}
+.Navbar{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100vh;
+}
+.NavbarTop{
+    height: 20%;
+}
+.NavLeft{
+    width:33%;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    padding: 1rem 15% 0 5%;
+    color: rgb(195, 141, 246);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavRight{
+    width:33%;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    padding:1rem  5% 0 15%;
+    color: rgb(195, 141, 246);
+}
+.Middle {
+    margin:0;
+    width:10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Middle >.Logo{
+    margin: 0;
+    font-size: 32px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 32pt;
+    color: blueviolet;
+}
+
+.NavbarBtm{
+    height:60%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    color: blueviolet;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    line-height: 10pt;
+}
+
+.shopbtn {
+    background: rgb(69, 14, 120);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .shop {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: blueviolet;
+    color: white;
+    transform: translateY(-6px);
+    will-change: transform;
+    transition: transform 250ms;
   }
-  to {
-    transform: rotate(360deg);
+
+.shopbtn:hover .shop {
+    transform: translateY(-6px);
   }
+.shopbtn:active .shop {
+    transform: translateY(-2px);
+  }
+.shopbtn:focus:not(:focus-visible) {
+    outline: none;
+  }
+.NavbarBtmLeft{
+    width:30%;
+}
+/* .bracelettop,.ring1,
+.necklacetop,.braceletbtm{
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    height: 300px;
+} */
+.NavbarBtmMiddle{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+.NavbarBtmMiddle>h1{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.NavbarBtmRight{
+    width:30%;
 }
